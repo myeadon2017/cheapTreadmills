@@ -19,10 +19,18 @@
 <body>
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="{% static 'affiliate/images/cheaptreadmills.png' %}" width=120 alt=""></a>
+      <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'affiliate/images/cheaptreadmills.png' %}" width=120 alt=""></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="{% url 'treadmills' %}">Treadmills</a>
+          <a class="nav-link" href="{% url 'ellipticals' %}">Ellipticals</a>
+          <a class="nav-link" href="{% url 'protien_shakes' %}">Protien Shakes</a>
+          <a class="nav-link" href="{% url 'healthy_snacks' %}">Healthy Snacks</a>
+        </div>
+      </div>
       <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
