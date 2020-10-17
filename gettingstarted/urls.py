@@ -17,7 +17,7 @@ import hello.views
 urlpatterns = [
     path("", hello.views.index, name="index"),
     path("treadmills/", hello.views.treadmills, name="treadmills"),
-    path("protien_shake/", hello.views.protien_shake, name="protien_shake"),
+    path("protien_shakes/", hello.views.protien_shakes, name="protien_shakes"),
     path("ellipticals/", hello.views.ellipticals, name="ellipticals"),
     path("healthy_snacks/", hello.views.healthy_snacks, name="healthy_snacks"),
     path("admin/", admin.site.urls),
