@@ -20,5 +20,6 @@ urlpatterns = [
     path("protien_shakes/", hello.views.protien_shakes, name="protien_shakes"),
     path("ellipticals/", hello.views.ellipticals, name="ellipticals"),
     path("healthy_snacks/", hello.views.healthy_snacks, name="healthy_snacks"),
+    path("ankle_weights/", hello.views.ankle_weights, name="ankle_weights"),
     path("admin/", admin.site.urls),
 ]

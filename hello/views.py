@@ -20,6 +20,9 @@ def treadmills(request):
 def protien_shakes(request):
     return render(request, "protien_shakes.html")
 
+def ankle_weights(request):
+    return render(request, "ankle_weights.html")
+
 
 def db(request):
 
